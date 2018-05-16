@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="31" viewBox="0 0 44 31">
+    <defs>
+        <path id="a" d="M21.661 10.91c5.888 0 10.661 4.772 10.661 10.66v6.51C27.497 29.36 23.943 30 21.662 30c-2.283 0-5.837-.64-10.662-1.92v-6.51c0-5.888 4.773-10.66 10.661-10.66z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+        <g stroke="#4A4A4A" stroke-width="2" transform="translate(27 4)">
+            <path d="M1 20.723c3.238.83 5.636 1.242 7.161 1.242 1.525 0 3.923-.413 7.161-1.242v-4.21a7.161 7.161 0 1 0-14.322 0v4.21z"/>
+            <circle cx="8.351" cy="4.745" r="4.745" fill="#FFF"/>
+        </g>
+        <g stroke="#4A4A4A" stroke-width="2" transform="translate(0 4)">
+            <path d="M1 20.723c3.238.83 5.636 1.242 7.161 1.242 1.525 0 3.923-.413 7.161-1.242v-4.21a7.161 7.161 0 1 0-14.322 0v4.21z"/>
+            <circle cx="8.351" cy="4.745" r="4.745" fill="#FFF"/>
+        </g>
+        <use fill="#FCFCFC" xlink:href="#a"/>
+        <path stroke="#4A4A4A" stroke-width="2" d="M12 27.308C16.37 28.438 19.601 29 21.661 29c2.06 0 5.292-.562 9.661-1.692V21.57a9.661 9.661 0 1 0-19.322 0v5.738z"/>
+        <path fill="#D3E5FB" d="M21.5 27.976c-2.685-3.228-4.027-5.641-4.027-7.238 0-1.597 1.342-4.01 4.027-7.238h-4.027l-2.88 2.883-1.632 1.098v9h2.47v1.495H21.5z"/>
+        <circle cx="21.909" cy="6.198" r="6.198" fill="#FCFCFC" stroke="#4A4A4A" stroke-width="2"/>
+    </g>
+</svg>
