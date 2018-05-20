@@ -149,6 +149,58 @@ body {
   left: -99px;
 }
 
+.offervideo_width {
+  max-width: 450px;
+}
+
+.offerlist {
+  padding: 0;
+  margin: 20px 0 0 0;
+  li {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000;
+    list-style: none;
+    padding-left: 10px;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 20px;
+      content: "-";
+    }
+  }
+}
+
+.smedia-btn {
+  //background: #4c2a70;
+  background: #4c2a70 url(../img/button-arr.svg ) no-repeat scroll;
+  background-position: calc(100% - 38px) center;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  display: table;
+  text-decoration: none;
+  padding:  13px 64px 13px 31px;
+  &:hover, &:active, &:visited, &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.smedia-btn_offervideo {
+  margin-top: 49px;
+}
+
 // .offervideo-textblock {
 //   width: 100%;
 //   max-width: 470px;
