@@ -42,6 +42,14 @@ body {
     background: transparent url(../img/headerline.png) no-repeat scroll center center;
     //background: red;
   }
+
+  &_unlined {
+    margin-bottom: 38px;
+    padding-bottom: 0;
+    &:before {
+      content: none;
+    }
+  }
 }
 
 .solutionsection-image {
@@ -101,6 +109,10 @@ body {
   &_bold {
     font-weight: 700;
   }
+}
+
+.offervideo {
+  padding-bottom: 60px;
 }
 
 .offervideo-header {
@@ -201,39 +213,178 @@ body {
   margin-top: 49px;
 }
 
-// .offervideo-textblock {
-//   width: 100%;
-//   max-width: 470px;
-//   float: left;
-// }
-//
-//
-// .offertext-imggrid {
-//   float: right;
-//   width: auto;
-//   display: table;
-// }
+.brandssection {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
 
-// #trailer {
-// 	position: relative;
-//   width: 100%;
-//   height: 100vh;
-// 	top: 0; right: 0; bottom: 0; left: 0;
-// 	overflow: hidden;
-// }
-//
-// #trailer > video {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	// width: 100%;
-// 	// height: 100%;
-//   min-width: 100%;
-//   min-height: 100%;
-//   width: auto;
-//   height: auto;
-//   z-index: 1;
-// }
+.brands-descr {
+  width: 100%;
+  max-width: 770px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+  margin: 0 auto;
+}
+
+.brandssection .swiper-container {
+  margin-top: 64px !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 34px !important;
+  padding-bottom: 50px !important;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: -webkit-flex;
+  // -webkit-flex-wrap: wrap !important;
+  // -ms-flex-wrap: wrap !important;
+  // flex-wrap: wrap !important;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+    flex-direction: column;
+ }
+
+.brandssection .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: -webkit-flex;
+  flex-direction: column;
+  // display: flex;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // -webkit-align-items: center;
+  // align-items: center;
+  background-color: #f2f2f2;
+  padding: 42px 49px;
+  box-sizing: border-box;
+}
+
+.brandssection .swiper-prev, .brandssection .swiper-next {
+  position: absolute;
+  width: 87px;
+  height: 30px;
+  //background: red;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #000;
+
+}
+
+.brandssection .swiper-prev {
+  left: 0;
+  bottom: 0;
+  background: transparent url(../img/ic-slider-left.svg ) no-repeat scroll left center;
+  text-align: right;
+}
+
+.brandssection .swiper-next {
+  right: 0;
+  bottom: 0;
+  background: transparent url(../img/ic-slider-right.svg ) no-repeat scroll right center;
+  text-align: left;
+}
+
+.brandssection .swiper-slide-active {
+
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    background: #f2f2f2;
+    content: "";
+    left: 0;
+    top: -34px;
+  }
+}
+
+.brandssection .slide-header {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.brandssection .slide-descr {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.publishersection__figure {
+  display: table;
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  height: 370px;
+  object-fit: contain;
+  border: solid 5px #4c2a70;
+}
+
+.publishersection-image {
+  position: absolute;
+  right: -100px;
+  bottom: -78px;
+}
+
+.publishersection-header {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.publishersection-descr {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+  width: 100%;
+  max-width: 470px;
+  margin-bottom: 37px;
+}
 
 
 // .usersection {
