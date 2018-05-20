@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="45" viewBox="0 0 162 45">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#6441A5"/>
+            <stop offset="100%" stop-color="#452260"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#000" font-family="Open Sans" font-size="18" font-weight="500">
+            <tspan x="56" y="28">InsightVision</tspan>
+        </text>
+        <path fill="url(#a)" d="M44.795 22.398c0 12.37-10.027 22.397-22.397 22.397S0 34.768 0 22.398 10.028 0 22.398 0s22.397 10.028 22.397 22.398"/>
+        <path fill="#FFF" d="M29.133 10.855h2.89l-8.325 23.087h-2.405l7.84-23.087zM19.737 30.29l-6.964-19.437h2.842s3.412 9.772 5.393 15.675l-1.271 3.762z"/>
+    </g>
+</svg>
