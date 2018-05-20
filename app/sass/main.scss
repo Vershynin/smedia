@@ -214,11 +214,15 @@ body {
 }
 
 .brandssection {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   margin-top: 40px;
 }
 
-.brands-descr {
+.careers {
+  margin-top: 71px;
+}
+
+.servinmedia-descr {
   width: 100%;
   max-width: 770px;
   font-size: 14px;
@@ -233,6 +237,7 @@ body {
 
 .brandssection .swiper-container {
   margin-top: 64px !important;
+
   width: 100%;
   height: 100%;
   padding-top: 34px !important;
@@ -385,6 +390,44 @@ body {
   max-width: 470px;
   margin-bottom: 37px;
 }
+
+.publishersection-list {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+  margin-bottom: 28px;
+}
+
+.sectionhdr-subheader {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 26px 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.careerssection {
+  margin-bottom: 20px;
+}
+
+.careers-description {
+  font-size: 16px;
+}
+
+.career-thumbs {
+  padding: 100px 0 0 500px !important;
+}
+
 
 
 // .usersection {

@@ -44,6 +44,17 @@ $(document).ready(function(){
     	}
   	});
 
+    var careerThumbs = new Swiper('.career-thumbs', {
+      autoplay: {
+        delay: 4000,
+      },
+      loop: 'true',
+      navigation: {
+    		nextEl: '.career-next',
+    		prevEl: '.career-prev',
+    	}
+    });
+
   	//loop: 'true',
   //	var loopedSlidesCount = $('.gallery-thumbs .swiper-wrapper .swiper-slide').length;
   //	console.log(loopedSlidesCount);
