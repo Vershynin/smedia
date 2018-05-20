@@ -44,12 +44,16 @@ $(document).ready(function(){
     	}
   	});
 
-    var galleryThumbs = new Swiper('.career-thumbs', {
+    var careersThumbs = new Swiper('.career-thumbs', {
       autoplay: {
         delay: 4000,
       },
       loop: 'true',
-      width: '370px'
+      width: '370px',
+      navigation: {
+        nextEl: '.career-next',
+        prevEl: '.career-prev',
+      }
 
   	});
 
