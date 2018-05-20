@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     var careersThumbs = new Swiper('.career-thumbs', {
       autoplay: {
-        delay: 4000,
+        delay: 1000,
       },
       loop: 'true',
       width: '370px',
