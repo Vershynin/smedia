@@ -46,14 +46,16 @@ $(document).ready(function(){
 
     var careersThumbs = new Swiper('.career-thumbs', {
       autoplay: {
-        delay: 1000,
+        delay: 5000,
       },
       loop: 'true',
-      width: '370px',
+      // width: '370px',
       navigation: {
         nextEl: '.career-next',
         prevEl: '.career-prev',
-      }
+      },
+     // slidesPerView: 'auto'
+     slidesPerView: 1
 
   	});
 
