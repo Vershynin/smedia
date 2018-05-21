@@ -59,17 +59,6 @@ $(document).ready(function(){
 
 
 
-  // $(".smedia-btn").on("click", function (event) {
-  //
-  //   event.preventDefault();
-  //
-  //   var btnId  = $(this).attr('href'),
-  //
-  //     btnTop = ($(btnId).offset().top) - 75;
-  //
-  //   $('body,html').animate({scrollTop: btnTop}, 1250);
-  // });
-
 
   var matched, browser;
 
