@@ -7,7 +7,7 @@ $(document).ready(function(){
       slidesPerView: 3,
       spaceBetween: 30,
   		touchRatio: 0.2,
-  		slideToClickedSlide: true,
+  		//slideToClickedSlide: true,
   		autoplay: {
   			delay: 4000,
   		},
@@ -17,21 +17,21 @@ $(document).ready(function(){
     	},
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 1
         },
         360: {
-          slidesPerView: auto,
+          slidesPerView: 1
         },
         480: {
-          slidesPerView: auto,
+          slidesPerView: 1
         },
         640: {
-          slidesPerView: 1,
+          slidesPerView: 1
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 3
         }
-        }
+      }
   	});
 
     var careersThumbs = new Swiper('.career-thumbs', {

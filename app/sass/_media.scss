@@ -244,6 +244,23 @@
   .offervideo-overlay::before {
       min-height: 270px;
   }
+
+  .publishersection-image {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    display: table;
+    width: 100%;
+  }
+
+  .publishersection__figure {
+    height: auto;
+    display: table;
+  }
+
+  .publishersection-header {
+    margin-top: 50px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
