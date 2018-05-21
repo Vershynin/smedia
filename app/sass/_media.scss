@@ -241,7 +241,9 @@
 }
 
 @media only screen and (max-width : 360px) {
-
+  .offervideo-overlay::before {
+      min-height: 270px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {

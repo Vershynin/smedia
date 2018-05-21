@@ -19,15 +19,18 @@ $(document).ready(function(){
         320: {
           slidesPerView: 1,
         },
+        360: {
+          slidesPerView: auto,
+        },
         480: {
+          slidesPerView: auto,
+        },
+        640: {
           slidesPerView: 1,
         },
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 3,
-          }
+        768: {
+          slidesPerView: 3,
+        }
         }
   	});
 
