@@ -58,4 +58,33 @@ $(document).ready(function(){
   });
 
 
+
+  $("#cbackform").submit(function( e ) { //устанавливаем событие отправки для формы с id=form
+
+      var name = $('#firstname').val();
+      var email = $('#email').val();
+      var message = $('#tmessage').val();
+
+      e.preventDefault();
+
+      if ( name != '' && email != '' && message != '' ) {
+        var form_data = $(this).serialize(); //собираем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "mail.php", //путь до php файла отправителя
+            data: form_data,
+
+            success: function(res) {
+                //код в этом блоке выполняется при успешной отправке сообщения
+                alert("Ваше сообщение отправлено!");
+                $("#cbackform")[0].reset();
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+      }
+  });
+
+
 });
