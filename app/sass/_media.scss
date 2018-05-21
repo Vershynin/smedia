@@ -80,6 +80,17 @@
     max-width: 100%;
     text-align: center;
   }
+
+  .contactus-paragr, .contactus-link {
+    width: 100%;
+    text-align: center;
+    display: table;
+  }
+
+  .formwrap {
+    margin-top: 20px;
+    padding: 59px 0 41px 59px;
+  }
 }
 
 @media only screen and (max-width : 768px) {
@@ -87,11 +98,79 @@
 }
 
 @media only screen and (max-width : 767px) {
+  #menu-top #navbar {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  #navbar a {
+    text-align: center;
+  }
+
+  .navbar-header {
+    border-bottom: 1px solid #4C2A70;
+  }
+
+  #menu-top .pull-right {
+    float: none !important;
+    clear: both !important;
+  }
+
+  .solutionsection {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .servinmedia-descr {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .brandssection .swiper-prev {
+    left: 15px;
+  }
+
+  .brandssection .swiper-next {
+    right: 15px;
+  }
+
+  .formwrap {
+    margin-top: 20px;
+    padding: 55px 0 20px 0px;
+  }
+
+  .subm_button {
+    float: left;
+    margin-left: 15px;
+  }
+
+  // .footer-events {
+  //   text-align: center;
+  // }
+
+  .brandssection .swiper-slide-active::before {
+    content: none;
+  }
+
+  .smedia-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
 }
 
-@media only screen and (max-width : 560px) {
 
+@media only screen and (max-width : 560px) {
+  .career-thumbs .career-next {
+      right: 80px;
+  }
+
+  .subm_button {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width : 690px) {
@@ -100,6 +179,60 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .career-thumbs .career-next {
+      right: 0;
+  }
+
+  .top-text {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 4;
+  }
+
+  #trailer {
+    height: auto;
+  }
+
+  #trailer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+  }
+
+  .top-header {
+    z-index: 4;
+  }
+
+  .offervideo-overlayimg {
+    width: 100%;
+    top: 50px;
+    margin: 0 auto;
+    display: table;
+    left: 0;
+    right: 0;
+  }
+
+  .offervideo-overlay::before {
+    min-height: 312px;
+  }
+
+  .career-thumbs .career-next,   .career-thumbs .career-prev {
+    //right: 0;
+    // bottom: -20px;
+    top: 50px;
+    display: table;
+  }
+
+  .career-thumbs::before {
+    content: none;
+  }
+
+  .career-thumbs {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
 }
 

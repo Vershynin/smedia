@@ -9,15 +9,19 @@
 #navbar {
   .navbar-nav {
     margin-top: 10px;
-    .active {
+  //  .active {
 
       a {
-        font-weight: bold !important;
-        background: transparent !important;
-        text-shadow: none !important;
-        box-shadow: none !important;
+        transition: all .28s ease 0s;
+        &:hover {
+          font-weight: bold !important;
+          background: transparent !important;
+          text-shadow: none !important;
+          box-shadow: none !important;
+          transition: all .28s ease 0s;
+        }
       }
-    }
+  //  }
     li {
       a {
       font-size: 16px;

@@ -46,17 +46,21 @@ $(document).ready(function(){
           // when window width is <= 320px
         320: {
           slidesPerView: 1,
-          spaceBetween: 10
+          //spaceBetween: 10
         },
           // when window width is <= 480px
         480: {
-          slidesPerView: 2,
-          spaceBetween: 20
+          slidesPerView: 1,
+          //spaceBetween: 20
         },
           // when window width is <= 640px
           640: {
+            slidesPerView: 1,
+          //  spaceBetween: 30
+          },
+          768: {
             slidesPerView: 3,
-            spaceBetween: 30
+            //spaceBetween: 30
           }
         }
   	});
@@ -85,6 +89,19 @@ $(document).ready(function(){
 
   //	galleryTop.controller.control = galleryThumbs;
   //	galleryThumbs.controller.control = galleryTop;
+
+  $("#menu").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь - высоту меню
+      top = ($(id).offset().top) - 75;
+
+    $('body,html').animate({scrollTop: top}, 1250);
+  });
 
 
 });
