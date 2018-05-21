@@ -59,6 +59,71 @@ $(document).ready(function(){
 
 
 
+  // $(".smedia-btn").on("click", function (event) {
+  //
+  //   event.preventDefault();
+  //
+  //   var btnId  = $(this).attr('href'),
+  //
+  //     btnTop = ($(btnId).offset().top) - 75;
+  //
+  //   $('body,html').animate({scrollTop: btnTop}, 1250);
+  // });
+
+
+  var matched, browser;
+
+  jQuery.uaMatch = function( ua ) {
+      ua = ua.toLowerCase();
+
+      var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+          /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+          /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+          /(msie)[\s?]([\w.]+)/.exec( ua ) ||
+          /(trident)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+          ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+          [];
+
+      return {
+          browser: match[ 1 ] || "",
+          version: match[ 2 ] || "0"
+      };
+  };
+
+  matched = jQuery.uaMatch( navigator.userAgent );
+  //IE 11+ fix (Trident)
+  matched.browser = matched.browser == 'trident' ? 'msie' : matched.browser;
+  browser = {};
+
+  if ( matched.browser ) {
+      browser[ matched.browser ] = true;
+      browser.version = matched.version;
+  }
+
+  // Chrome is Webkit, but Webkit is also Safari.
+  if ( browser.chrome ) {
+      browser.webkit = true;
+  } else if ( browser.webkit ) {
+      browser.safari = true;
+  }
+
+  jQuery.browser = browser;
+
+
+  $(".smedia-btn").click(function () {
+        var elementClick = $(this).attr("href");
+        console.log(elementClick);
+        var destination = $(elementClick).offset().top;
+        if ($.browser.safari) {
+            $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
+        } else {
+            $('html').animate({ scrollTop: destination }, 1100);
+        }
+        return false;
+    });
+
+
+
   $("#cbackform").submit(function( e ) { //устанавливаем событие отправки для формы с id=form
 
       var name = $('#firstname').val();
