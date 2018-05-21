@@ -99,10 +99,10 @@ $(document).ready(function(){
   jQuery.browser = browser;
 
 
-  $(".smedia-btn").click(function () {
+  $(".to-contacts").click(function () {
         var elementClick = $(this).attr("href");
         console.log(elementClick);
-        var destination = $(elementClick).offset().top;
+        var destination = $(elementClick).offset().top - 25;
         if ($.browser.safari) {
             $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
         } else {
