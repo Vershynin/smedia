@@ -786,7 +786,73 @@ body {
     line-height: 2.25;
     letter-spacing: normal;
     color: #000;
+    margin-top: 15px;
   }
+
+  .contactus-block  .contactus-link {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .form-submit {
+    width: 100%;
+  }
+
+  .subm_button {
+    width: 170px;
+    height: 44px;
+
+    display: table;
+    float: right;
+    margin-top: 20px;
+    border: solid 2px rgba(255, 255, 255, .5);
+    text-align: center;
+    @extend .smedia-btn;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+  }
+
+
+footer {
+  margin-top: 70px;
+}
+
+.footer-events {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.footerevents-single {
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.footerevents-single a {
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.footerevents-single p {
+  font-weight: normal;
+  margin: 0;
+}
 
 
 
