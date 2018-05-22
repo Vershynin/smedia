@@ -162,6 +162,19 @@
     margin-top: 14px;
   }
 
+  .offervideo-overlayimg {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    display: table;
+  }
+
+  .form-submit {
+    width: 100%;
+    display: table;
+    padding: 0 15px;
+  }
+
 }
 
 
@@ -241,6 +254,31 @@
 }
 
 @media only screen and (max-width : 380px) {
+  .publishersection-image {
+      position: static;
+      width: 100%;
+  }
+
+  .publishersection__figure {
+    height: auto;
+  }
+
+  .publishersection-header {
+    margin-top: 50px;
+  }
+
+  .offervideo-overlay::before {
+    min-height: 270px;
+  }
+
+  .solutionsection__item {
+    padding-left: 85px;
+  }
+
+  .top-header {
+    padding: 0 15px;
+    font-size: 30px;
+  }
 
 }
 
